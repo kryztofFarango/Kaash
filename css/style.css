@@ -1,0 +1,60 @@
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+/* Navigation*/
+
+.navbar {
+    background-color: #00A8A8;;
+}
+
+.top-nav-collapse {
+    background-color: #00A8A8;;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #00A8A8;;
+    }
+}
+/*Intro*/
+
+.view {
+    background: url("http://mdbootstrap.com/images/regular/city/img%20(25).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view {
+        height: auto;
+        position: relative;
+    }
+}
+
+.description {
+    padding-top: 25%;
+    padding-bottom: 3rem;
+    color: #fff
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
+.FixNav {
+  margin-top: 10px;
+margin-right: 15px;
+}
+
+.card-blockF{
+    padding-top: 30px;
+}
