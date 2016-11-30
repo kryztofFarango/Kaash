@@ -16,7 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/mdb.css" rel="stylesheet">
 
     <!-- styles Custom-->
     <link href="css/style.css" rel="stylesheet">
@@ -34,7 +34,6 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-      <a class="navbar-brand hidden-sm-up" href="#" target="_blank"><img src="img/logoKaashH.png" style="width:150px;" /></a>
 
         <!-- Collapse button-->
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
@@ -45,6 +44,7 @@
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
                 <!--Navbar Brand-->
+
                 <a class="navbar-brand" href="#" target="_blank"><img src="img/logoKaashH.png" style="width:150px;" /></a>
                 <!--Links-->
                 <ul class="nav navbar-nav">
@@ -52,13 +52,13 @@
                         <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item FixNav">
-                        <a class="nav-link" href="#best-features">¿Qué es?</a>
+                        <a class="nav-link desplaza" href="#quees">¿Qué es?</a>
                     </li>
                     <li class="nav-item FixNav">
-                        <a class="nav-link" href="#examples-of-use">¿Cómo se juega?</a>
+                        <a class="nav-link desplaza" href="#como">¿Cómo se juega?</a>
                     </li>
                     <li class="nav-item FixNav">
-                        <a class="nav-link" href="#testimonials">Escríbenos</a>
+                        <a class="nav-link desplaza" href="#escribenos">Escríbenos</a>
                     </li>
 
                 </ul>
@@ -98,13 +98,14 @@
                             <hr class="hr-dark wow fadeInLeft">
                             <p class="wow fadeInLeft" data-wow-delay="0.4s">¿Te imaginas ganar grandes premios por tan solo $1? Es completamente real, ve cómo funciona y regustrate,<strong> ¡no te pierdas la oportunidad!</strong></p>
                             <br>
-                            <a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s"><i class="fa fa-play"></i> Ver el Video</a>
+                            <button type="button" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s"><i class="fa fa-play"></i> Ver vídeo</button>
+
                         </div>
                     </div>
                     <!--/.First column-->
 
                     <!--Second column-->
-                    <div class="col-lg-6" style="padding-top:60px;">
+                    <div class="col-lg-6" style="padding-top:80px;">
                         <!--Form-->
                         <div class="card wow fadeInRight">
                             <div class="card-block">
@@ -187,11 +188,41 @@
 
 <!-- /Inicio-->
 
+<!--qué es-->
+<div class="container text-xs-center">
+    <div class="row">
+        <div class="divider-new wow fadeInLeft">
+          <h2 class="h2-responsive titulos" id="quees">¿Qué es?</h2>
+        </div>
+          <h3 class="wow fadeInUp h3-responsive">¿Quieres ganar premios desde un $1.00?</h3>
+          <p>Somos una empresa mexicana <strong>honesta,</strong> dedicada a hacer <br/>sorteos en línea
+          de una manera diferente, estámos seguros de que te convertirás en un ganador</p>
+          <button type="button" class="btn btn-primary">Ver vídeo</button>
+    </div>
+</div>
+<!--como-->
+
+<div class="container">
+  <div class="divider-new wow fadeInLeft">
+    <h2 class="h2-responsive titulos" id="como">¿Cómo se juega?</h2>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!--Progress tracker-->
+    <script src="js/progresstracker.js"></script>
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
@@ -202,7 +233,15 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+    (function() {
+        //Init Desplaza
+        $('body').desplaza();
+    })();
+</script>
 </body>
 
 </html>
