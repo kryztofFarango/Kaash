@@ -67,3 +67,7 @@ margin-right: 15px;
 .fixLabel{
   margin-bottom: 0px;
 }
+
+.info{
+  line-height: 25px!important;
+}
