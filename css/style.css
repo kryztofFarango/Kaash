@@ -71,3 +71,26 @@ margin-right: 15px;
 .info{
   line-height: 25px!important;
 }
+.description2 {
+    padding-top: 25%;
+    padding-bottom: 3rem;
+    color: gray
+}
+
+@media (max-width: 992px) {
+    .description2 {
+        padding-top: 0rem;
+        text-align: center;
+    }
+}
+
+.pantalla{
+  width: 70%;
+  padding-top: 25px;
+}
+@media (max-width: 568px) {
+    .pantalla {
+width: 100% ;
+padding-top: 15%;
+    }
+}
